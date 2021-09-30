@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    margin: 0;
+    background: #dff;
+}
+
+a {
+    text-decoration: none;
+    color: #366;
+}
+
+a.link {
+    font-weight: bold;
+    padding: 0 0.2em;
+    border-bottom: 2px solid #366;
+}
+
+a.link:hover {
+    background: #366;
+    color: #dff;
+}
+
+.head {
+    background: #366;
+    padding: 20px 0;
+}
+
+.head h1 {
+    margin: 0;
+}
+
+.main {
+    width: 60%;
+    margin: 1em 20%;
+}
+
+.info {
+    margin: 1em auto;
+}
+
+.info img {
+    width: 40%;
+}
+
+#bar {
+    text-align: left;
+    display: inline-block;
+    border: 1px solid #366;
+    width: 50%;
+    margin: 0 1em;
+    height: 20px;
+}
+
+#bar #bar1 {
+    display: inline-block;
+    background: #366;
+    height: 20px;
+}

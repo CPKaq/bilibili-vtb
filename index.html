@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bilibili 虚拟主播统计工具</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Bilibili 虚拟主播统计工具</h1>
+    </div>
+    <div class="main">
+        <div class="load">
+            <button type="button" id="load">加载</button>
+            <span id="bar">
+                <span id="bar1"> </span>
+            </span>
+            <span id="total-count">0/0</span>
+        </div>
+        <div class="info">
+            <img src="" id="pic1">
+            <img src="" id="pic2">
+            <div id="room-title"></div>
+            <div id="room-name"></div>
+        </div>
+        <div class="option">
+            <a class="button" id="go-room" target="_blank">进入直播间</a>
+            <button type="button" id="btn-skip">下一个</button>
+            <button type="button" id="btn-count">计数+下一个</button>
+            <span id="digit-count">0</span>
+    </div>
+</body>
+</html>
+<script src="https://s1.hdslb.com/bfs/static/jinkela/long/js/jquery/jquery1.7.2.min.js"></script>
+<script src="vtb.js"></script>
