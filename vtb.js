@@ -1,11 +1,3 @@
-/*url = "https://api.live.bilibili.com/xlive/web-interface/v1/second/getList?platform=web&parent_area_id=9&area_id=0&sort_type=sort_type_291&page=1"
-
-$.get(url,function(data)
-    {
-        console.log(data.text); 
-    }
-);
-*/
 var vtbList;
 var index = 0;
 var count = 0;
@@ -20,9 +12,17 @@ function getPageList(page)
 {
     json = {};
     url = "https://api.live.bilibili.com/xlive/web-interface/v1/second/getList?platform=web&parent_area_id=9&area_id=0&sort_type=sort_type_291&page="+page;
-    $.get(url, function(data)
+    /*$.get(url, function(data)
     {
         json = JSON.parse(data);
+    });*/
+    $.ajax({
+        type: "get",
+        datatype: "JSONP",
+        cors: true,
+        url: url,
+        headers: {'Access-Control-Allow-Origin': '*'},
+        success: function(data) {json = JSON.parse(data);}
     });
     return json["data"]["list"];
 }
